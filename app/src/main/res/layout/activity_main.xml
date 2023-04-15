@@ -12,6 +12,7 @@
         android:layout_width="119dp"
         android:layout_height="112dp"
         android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name"
         android:onClick="selectImage"
         android:src="@drawable/icon2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/green"
         android:ems="10"
-        android:hint="Name"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:textColor="@color/green"
         android:textColorHint="@color/green"
@@ -34,7 +35,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/ageEntry"
@@ -43,14 +45,15 @@
         android:layout_marginVertical="20dp"
         android:backgroundTint="@color/green"
         android:ems="10"
-        android:hint="age"
+        android:hint="@string/age"
         android:inputType="number"
         android:textColor="@color/green"
         android:textColorHint="@color/green"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameEntry" />
+        app:layout_constraintTop_toBottomOf="@+id/nameEntry"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/emailEntry"
@@ -59,14 +62,15 @@
         android:layout_marginVertical="20dp"
         android:backgroundTint="@color/green"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColor="@color/green"
         android:textColorHint="@color/green"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageEntry" />
+        app:layout_constraintTop_toBottomOf="@+id/ageEntry"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/phoneEntry"
@@ -75,14 +79,15 @@
         android:layout_marginVertical="20dp"
         android:backgroundTint="@color/green"
         android:ems="10"
-        android:hint="phone no."
+        android:hint="@string/phoneNo"
         android:inputType="phone"
         android:textColor="@color/green"
         android:textColorHint="@color/green"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEntry" />
+        app:layout_constraintTop_toBottomOf="@+id/emailEntry"
+        android:importantForAutofill="no" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -99,8 +104,8 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="12dp"
-            android:text="Gender"
+            android:layout_marginEnd="12dp"
+            android:text="@string/gender"
             android:textColor="@color/green"
             android:textSize="20sp"
             android:textStyle="italic" />
@@ -111,7 +116,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/green"
             android:onClick="genderInput"
-            android:text="Female"
+            android:text="@string/female"
             android:textColor="@color/green"
             android:textStyle="italic" />
 
@@ -121,7 +126,7 @@
             android:layout_height="wrap_content"
             android:buttonTint="@color/green"
             android:onClick="genderInput"
-            android:text="Male"
+            android:text="@string/male"
             android:textColor="@color/green"
             android:textStyle="italic" />
 
@@ -134,7 +139,7 @@
         android:layout_marginVertical="20dp"
         android:backgroundTint="@color/green"
         android:onClick="submit"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="#050209"
         android:textSize="16sp"
         android:textStyle="bold|italic"
