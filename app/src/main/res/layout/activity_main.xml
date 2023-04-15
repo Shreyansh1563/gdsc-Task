@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/neon">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="48dp"
+        android:onClick="selectImage"
+        android:src="@drawable/icon2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEntry"
+        android:layout_width="268dp"
+        android:layout_height="77dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/ageEntry"
+        android:layout_width="266dp"
+        android:layout_height="73dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:hint="age"
+        android:inputType="number"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEntry" />
+
+    <EditText
+        android:id="@+id/emailEntry"
+        android:layout_width="268dp"
+        android:layout_height="71dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageEntry" />
+
+    <EditText
+        android:id="@+id/phoneEntry"
+        android:layout_width="268dp"
+        android:layout_height="71dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/green"
+        android:ems="10"
+        android:hint="phone no."
+        android:inputType="phone"
+        android:textColor="@color/green"
+        android:textColorHint="@color/green"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEntry" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneEntry">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="Gender"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/green"
+            android:onClick="genderInput"
+            android:text="Female"
+            android:textColor="@color/green"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/green"
+            android:onClick="genderInput"
+            android:text="Male"
+            android:textColor="@color/green"
+            android:textStyle="italic" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/green"
+        android:onClick="submit"
+        android:text="Submit"
+        android:textColor="#050209"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
